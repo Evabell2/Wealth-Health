@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: black;
+}
+body .header header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 5px 0;
+  background: #e91e63;
+}
+body .header header a {
+  text-decoration: none;
+  color: white;
+}
+body .header header a:not(:nth-of-type(2)) {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+body .header header a:not(:nth-of-type(2)):hover {
+  transform: scale(0.9);
+}
+body .header header a:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 30px;
+}
+body .header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 44.4px - 509.4px);
+  margin: 0;
+  background: #18191a;
+  color: white;
+  text-align: center;
+}
+body .header h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto;
+  background: #e91e63;
+}
+body #form {
+  width: 55%;
+  margin: 0 auto;
+  padding: 5% 0 10%;
+}
+body #form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 15px;
+}
+body #form form input {
+  padding: 10px;
+  color: white;
+  border-color: white;
+  background: transparent;
+}
+body #form form input::-moz-placeholder {
+  color: white;
+}
+body #form form input::placeholder {
+  color: white;
+}
+body #form form > input:nth-of-type(1), body #form form > input:nth-of-type(2), body #form form > input:nth-of-type(3), body #form form > input:nth-of-type(4) {
+  width: calc(48% - 15px);
+}
+body #form form fieldset {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  color: white;
+}
+body #form form fieldset input,
+body #form form fieldset select {
+  width: calc(50% - 15px);
+}
+body #form form div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+body #form form div select {
+  width: auto;
+  padding: 10px;
+}
+body #form button {
+  float: right;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #e91e63;
+  color: white;
+  transform: scale(1);
+  transition: transform 400ms;
+  cursor: pointer;
+}
+body #form button:hover {
+  transform: scale(0.9);
+}/*# sourceMappingURL=style.css.map */
