@@ -90,6 +90,15 @@ body {
 
             }
 
+            .react-datepicker-wrapper {
+                width: calc(48% - -8px);
+
+                input {
+                    width: 100%;
+                }
+
+            }
+
             fieldset {
                 display: flex;
                 gap: 15px;
@@ -129,6 +138,21 @@ body {
             &:hover {
                 transform: scale(0.9);
             }
+        }
+    }
+
+    #table {
+        padding: 5% 10%;
+
+        // title column
+        .sc-fbJfA {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        // icone sortable
+        .sc-kFuwaP {
+            opacity: 1;
         }
     }
 }

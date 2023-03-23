@@ -70,6 +70,12 @@ body #form form input::placeholder {
 body #form form > input:nth-of-type(1), body #form form > input:nth-of-type(2), body #form form > input:nth-of-type(3), body #form form > input:nth-of-type(4) {
   width: calc(48% - 15px);
 }
+body #form form .react-datepicker-wrapper {
+  width: calc(48% + 8px);
+}
+body #form form .react-datepicker-wrapper input {
+  width: 100%;
+}
 body #form form fieldset {
   display: flex;
   gap: 15px;
@@ -103,4 +109,14 @@ body #form button {
 }
 body #form button:hover {
   transform: scale(0.9);
+}
+body #table {
+  padding: 5% 10%;
+}
+body #table .sc-fbJfA {
+  font-weight: bold;
+  font-size: 14px;
+}
+body #table .sc-kFuwaP {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
