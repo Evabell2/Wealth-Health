@@ -77,14 +77,17 @@ function CurrentEmployee() {
     ]
     const [search, setSearch] = useState(data)
     const searchFilter = (event) => {
-        const textValue = search.filter(row => {
-            return row.firstName.toLowerCase().includes(event.target.value.toLowerCase())
+        const textValue = event.target.value.toLowerCase();
+        const filteredData = data.filter(row => {
+            return row.firstName.toLowerCase().includes(textValue);
         })
-        setSearch(textValue)
+        setSearch(textValue.length > 0 ? filteredData : data);
     }
     return (
         <div id='table'>
-            <input type="text" onChange={searchFilter} />
+            <div id='btn_search'>
+                <input type="text" onChange={searchFilter} />
+            </div>
             <DataTable
                 columns={columns}
                 data={search}

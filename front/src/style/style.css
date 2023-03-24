@@ -70,31 +70,47 @@ body #form form input::placeholder {
 body #form form > input:nth-of-type(1), body #form form > input:nth-of-type(2), body #form form > input:nth-of-type(3), body #form form > input:nth-of-type(4) {
   width: calc(48% - 15px);
 }
-body #form form .react-datepicker-wrapper {
-  width: calc(48% + 8px);
-}
-body #form form .react-datepicker-wrapper input {
-  width: 100%;
-}
 body #form form fieldset {
   display: flex;
   gap: 15px;
   width: 100%;
   color: white;
 }
-body #form form fieldset input,
-body #form form fieldset select {
+body #form form fieldset input {
   width: calc(50% - 15px);
 }
+body #form form fieldset .css-b62m3t-container {
+  width: calc(50% - 15px);
+  color: black !important;
+}
+body #form form fieldset .css-b62m3t-container div {
+  color: black !important;
+  font-size: 14px;
+}
+body #form form fieldset .css-b62m3t-container div#react-select-2-placeholder {
+  color: black !important;
+  font-size: 14px;
+}
 body #form form div {
-  display: flex;
-  align-items: center;
-  gap: 15px;
   color: white;
 }
-body #form form div select {
-  width: auto;
-  padding: 10px;
+body #form form div.department {
+  display: flex;
+  align-items: center;
+}
+body #form form div.department label {
+  margin-right: 20px;
+}
+body #form form div.department .css-b62m3t-container {
+  color: black !important;
+}
+body #form form div.department .css-b62m3t-container div {
+  color: black !important;
+  font-size: 14px;
+}
+body #form form div.department .css-b62m3t-container div#react-select-2-placeholder {
+  color: black !important;
+  font-size: 14px;
 }
 body #form button {
   float: right;
@@ -110,6 +126,18 @@ body #form button {
 body #form button:hover {
   transform: scale(0.9);
 }
+body #btn_search {
+  margin-bottom: 10px;
+}
+body #btn_search::before {
+  content: "Search :";
+  margin-right: 10px;
+  color: white;
+  font-size: 14px;
+}
+body #btn_search input {
+  height: 25px;
+}
 body #table {
   padding: 5% 10%;
 }
@@ -119,4 +147,12 @@ body #table .sc-fbJfA {
 }
 body #table .sc-kFuwaP {
   opacity: 1;
+}
+body #table .rdt_Pagination {
+  padding-top: 30px;
+  color: black;
+  font-weight: bold;
+}
+body #table .rdt_Pagination button svg {
+  fill: #e91e63 !important;
 }/*# sourceMappingURL=style.css.map */
