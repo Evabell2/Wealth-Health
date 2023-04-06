@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import DatePicker from 'react-datepicker'
 import Select from 'react-select';
+import Modale from "../Components/Modale"
 
 function CreateEmployee() {
 
   const [birthDate, setBirthDate] = useState(null)
   const [startDate, setStartDate] = useState(null)
   const [selectedOption, setSelectedOption] = useState(null);
+  const [displayModale, setDisplayModale] = useState(false)
 
   const optionsStates = [
     {
@@ -267,6 +269,9 @@ function CreateEmployee() {
         border: 'none'
     }),
   }
+  const handleDisplayModale = () => {
+    setDisplayModale(!displayModale);
+  }
 
   return (
     <div id="form">
@@ -318,7 +323,9 @@ function CreateEmployee() {
         
       </form>
 
-      <button type='submit' >Save</button>
+      <button type='submit' onClick={handleDisplayModale}>Save</button>
+
+      <Modale display={displayModale} setDisplayModale={handleDisplayModale} />
     </div>
   )
 }

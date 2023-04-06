@@ -68,7 +68,6 @@
   display: inline-block !important;
   padding: 0 !important;
   border: 0 !important;
-  width: calc(48% - -8px) !important;
 }
 .react-datepicker-wrapper input {
   width: 100%;

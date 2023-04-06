@@ -49,6 +49,17 @@ function CurrentEmployee() {
             sortable: true
         }
     ]
+    // const employee = {
+    //     firstName: props.firstName,
+    //     lastName: props.lastName,
+    //     dateOfBirth: props.dateOfBirth,
+    //     startDate: props.startDate,
+    //     department: props.department,
+    //     street: props.street,
+    //     city: props.city,
+    //     state: props.state,
+    //     zipCode: props.zipCode
+    // }
     const data = [
         {
             id: 1,
